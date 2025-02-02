@@ -9,7 +9,7 @@ app = Flask(__name__, template_folder='frontent')
 CORS(app)
 
 # Database Configuration
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:Jay%402003@localhost:3306/ai_career_counselor"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:password@localhost/ai_career_counselor"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
