@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to CSS file -->
+</head>
+<body style="background-color: black; color: white; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; flex-direction: column;">
+
+    <!-- Glowing Circle for Assistant -->
+    <div id="assistant-circle" style="width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(45deg, #00d4ff, #ff00bf); display: flex; justify-content: center; align-items: center; animation: glow 1.5s infinite alternate; position: relative;">
+        <div id="assistant-message" style="font-size: 13px; font-weight: bold;">Hello! I'm AI_Career_Councelor</div>
+
+        <!-- Voice Input Button at the Bottom of the Circle -->
+        <button id="voice-input-btn" style="position: absolute; bottom: -25px; padding: 8px 18px; font-size: 14px; background: linear-gradient(45deg ,blue, blue); color: white; border: none; border-radius: 10px; cursor: pointer;">
+            Talk
+        </button>
+    </div>
+
+    <!-- Link to External JS -->
+    <script src="script.js"></script>
+
+    <!-- CSS Animations -->
+    <style>
+        /* Glowing animation for the assistant circle */
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 5px #00d4ff, 0 0 10px #ff00bf, 0 0 15px #00d4ff;
+            }
+            100% {
+                box-shadow: 0 0 20px #00d4ff, 0 0 30px #ff00bf, 0 0 40px #00d4ff;
+            }
+        }
+    </style>
+</body>
+</html>
